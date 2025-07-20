@@ -1,0 +1,69 @@
+[
+  {
+    "course": "NLW Connect",
+    "supplementary_material": "https://efficient-sloth-d85.notion.site/NLW-Connect-337b47bcef1640fc9a536f66dd45d8f1",
+    "trails": [
+      {
+        "links": [
+          "https://www.youtube.com/watch?v=xKDzG6cSOyk&ab_channel=Rocketseat",
+          "https://www.youtube.com/watch?v=y2V3yTq3_H4&ab_channel=Rocketseat",
+          "https://www.youtube.com/watch?v=N6PopjHp8ic&ab_channel=Rocketseat",
+          "https://www.youtube.com/watch?v=EPDt9j2F86U&ab_channel=Rocketseat"
+        ],
+        "name": "Trilha React"
+      },
+      {
+        "links": [
+          "https://www.youtube.com/watch?v=44C7Gfjt-mI&ab_channel=Rocketseat",
+          "https://www.youtube.com/watch?v=8NUQWPRSEO8&ab_channel=Rocketseat",
+          "https://www.youtube.com/watch?v=jrWKn2ZWPEk&ab_channel=Rocketseat",
+          "https://www.youtube.com/watch?v=ZIqxDzFjOxA&ab_channel=Rocketseat"
+        ],
+        "name": "Trilha Node"
+      },
+      {
+        "links": [
+          "https://www.youtube.com/watch?v=cPjy-x4tX24&ab_channel=Rocketseat",
+          "https://www.youtube.com/watch?v=wNqeAkp3xr8&ab_channel=Rocketseat",
+          "https://www.youtube.com/watch?v=mquztyQidkw&ab_channel=Rocketseat",
+          "https://www.youtube.com/watch?v=2YygQrQDm5A&ab_channel=Rocketseat"
+        ],
+        "name": "Trilha Java"
+      },
+      {
+        "links": [
+          "https://www.youtube.com/watch?v=-PcvJtvKH7U&ab_channel=Rocketseat",
+          "https://www.youtube.com/watch?v=ZzwG645eIwE&ab_channel=Rocketseat",
+          "https://www.youtube.com/watch?v=8WtaXljMVaA&ab_channel=Rocketseat",
+          "https://www.youtube.com/watch?v=wc_ld5yFym0&ab_channel=Rocketseat"
+        ],
+        "name": "Trilha CSharp"
+      },
+      {
+        "links": [
+          "https://www.youtube.com/watch?v=hyWOUHDntwY&ab_channel=Rocketseat",
+          "https://www.youtube.com/watch?v=gzwKHMC6G6E&ab_channel=Rocketseat",
+          "https://www.youtube.com/watch?v=VhpNR9JNk50&ab_channel=Rocketseat",
+          "https://www.youtube.com/watch?v=rRmDPXxt8OE&ab_channel=Rocketseat"
+        ],
+        "name": "Trilha Python"
+      }
+    ]
+  },
+  {
+    "course": "Imersão Full Cycle 21",
+    "supplementary_material": "https://github.com/devfullcycle/imersao21",
+    "trails": [
+      {
+        "links": [
+          "https://www.youtube.com/watch?v=Bfqdj8LnM8Q&ab_channel=FullCycle",
+          "https://www.youtube.com/watch?v=cATIeAAY6mc&ab_channel=FullCycle",
+          "https://www.youtube.com/watch?v=z73ZM0QP0wc&ab_channel=FullCycle",
+          "https://www.youtube.com/watch?v=77nIAuKV7qo&ab_channel=FullCycle",
+          "https://www.youtube.com/watch?v=VxsSwOAaWnA&ab_channel=FullCycle"
+        ],
+        "name": "Trilha Full Cycle"
+      }
+    ]
+  }
+]
