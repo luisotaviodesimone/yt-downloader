@@ -1,0 +1,35 @@
+# Arquivos e diretórios do Node
+node_modules
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Arquivos de build
+dist
+build
+.vite
+
+# Arquivos de teste
+coverage
+.nyc_output
+*.test.js
+*.spec.js
+
+# Arquivos específicos do IDE
+.idea
+.vscode
+*.swp
+*.swo
+
+# Arquivos de controle de versão
+.git
+.gitignore
+.github
+
+# Outros arquivos e diretórios desnecessários
+.DS_Store
+*.log
+.editorconfig
+README.md
+LICENSE
+*.md

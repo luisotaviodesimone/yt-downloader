@@ -46,8 +46,11 @@ function App() {
 
     try {
       const urlsArray = data.urls.map(item => item.url)
-      
-      const response = await fetch('http://localhost:8000/download', {
+
+      const API_HOST = import.meta.env.VITE_APP_API_HOST || 'localhost'
+      const API_PORT = import.meta.env.VITE_APP_API_PORT || '3000'
+
+      const response = await fetch(`http://${API_HOST}:${API_PORT}/download`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
