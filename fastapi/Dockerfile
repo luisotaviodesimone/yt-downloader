@@ -1,6 +1,10 @@
 # Use a Python image with uv pre-installed
 FROM ghcr.io/astral-sh/uv:python3.13-bookworm-slim
 
+LABEL org.opencontainers.image.source=https://github.com/luisotaviodesimone/yt-downloader
+LABEL org.opencontainers.image.description="fastapi"
+LABEL org.opencontainers.image.licenses=MIT
+
 # Install the project into `/app`
 WORKDIR /app
 

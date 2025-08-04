@@ -1,6 +1,10 @@
 # Estágio de build
 FROM node:20-alpine AS build
 
+LABEL org.opencontainers.image.source=https://github.com/luisotaviodesimone/yt-downloader
+LABEL org.opencontainers.image.description="vite"
+LABEL org.opencontainers.image.licenses=MIT
+
 # Definir diretório de trabalho
 WORKDIR /app
 
