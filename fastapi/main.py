@@ -4,8 +4,13 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from services.videos import get_videos
 from services.videos.download import download_video_from_urls
+from settings import Settings
 
-app = FastAPI()
+settings = Settings()
+
+app = FastAPI(
+    root_path=settings.base_path
+)
 
 origins = [
     "*",
