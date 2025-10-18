@@ -2,10 +2,10 @@ from typing import List
 
 import yt_dlp
 
-from settings import Settings
+from settings import settings
+from celery_app import celery_app
 
-settings = Settings()
-
+@celery_app.task(name="download_video_from_urls")
 def download_video_from_urls(links: List[str]):
     ydl_opts = {
         "format": "bestvideo+bestaudio/best",

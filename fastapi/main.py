@@ -1,3 +1,7 @@
+from celery.result import AsyncResult
+from starlette.responses import JSONResponse
+
+from celery_app import celery_app
 from dtos.DownloadVideoRequestDto import DownloadVideoRequestDto
 from dtos.GetVideosResponseDto import GetVideosResponseDto
 from fastapi import FastAPI
@@ -8,9 +12,7 @@ from settings import Settings
 
 settings = Settings()
 
-app = FastAPI(
-    root_path=settings.base_path
-)
+app = FastAPI(root_path=settings.base_path)
 
 origins = [
     "*",
@@ -32,8 +34,23 @@ async def health():
 
 @app.post("/download")
 def download_video(dto: DownloadVideoRequestDto):
-    download_video_from_urls(dto.urls)
-    return {"message": f"Video from {dto.urls} was downloaded."}
+    # download_video_from_urls(dto.urls)
+    # return JSONResponse({"message": "Download started"})
+    task = download_video_from_urls.delay(dto.urls)
+    return JSONResponse({"task_id": task.id, "message": "Download enqueued."})
+
+
+@app.get("/download/{task_id}")
+def get_download_status(task_id: str):
+    result = AsyncResult(task_id, app=celery_app)
+    if result.state == "PENDING":
+        return {"status": "pending"}
+    elif result.state == "PROGRESS":
+        return {"status": "in_progress"}
+    elif result.state == "SUCCESS":
+        return {"status": "completed"}
+    else:
+        return {"status": "failed", "error": str(result.info)}
 
 
 @app.get("/videos")
